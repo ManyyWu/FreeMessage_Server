@@ -1,0 +1,3 @@
+[submodule "fm_lua/luajit2"]
+	path = fm_lua/luajit2
+	url = https://github.com/manyywu/luajit2.git
