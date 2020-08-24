@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.1)
 
+project(free_message)
+
+include_directories(.)
+
 add_subdirectory(fm_common)
 add_subdirectory(fm_net)
 add_subdirectory(fm_kernel)
