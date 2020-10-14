@@ -13,6 +13,7 @@ TEST_DECLARE(sem)
 TEST_DECLARE(thread)
 TEST_DECLARE(stack_trace)
 TEST_DECLARE(sleep)
+TEST_DECLARE(doubly_list)
 
 #if 1
 TEST_LIST_START(unit_tests_entry)
@@ -28,6 +29,7 @@ TEST_LIST_START(unit_tests_entry)
   TEST_ENTRY(thread)
   TEST_ENTRY(stack_trace)
   TEST_ENTRY(sleep)
+  TEST_ENTRY(doubly_list)
 
 TEST_LIST_END
 #else

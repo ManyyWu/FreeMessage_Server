@@ -10,7 +10,9 @@ list(APPEND test_src
     test-util.c
     test-thread.c
     test-lock.c
+    test-list.c
     test-get-time.c
+    test-tcp_server.c
     )
 
 add_executable(test ${test_src})
