@@ -40,6 +40,20 @@
 
 #include <cmockery.h>
 
+#if __WORDSIZE == 64
+# ifndef __intptr_t_defined
+typedef long int intptr_t;
+#  define __intptr_t_defined
+# endif
+typedef unsigned long int uintptr_t;
+#else
+# ifndef __intptr_t_defined
+typedef int __intptr_t;
+#  define __intptr_t_defined
+# endif
+typedef unsigned int __uintptr_t;
+#endif
+
 #ifdef _WIN32
 #define vsnprintf _vsnprintf
 #endif // _WIN32

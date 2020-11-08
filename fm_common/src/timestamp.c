@@ -1,10 +1,12 @@
-#include "fm_common/time.h"
+#include "timestamp.h"
 
 #include <stdlib.h>
-#include <execinfo.h>
 #include <time.h>
 #include <sys/time.h>
 #include <unistd.h>
+#ifdef FM_SYSTEM_LINUX
+#include <execinfo.h>
+#endif
 
 #define STACK_TRACE_LINE 128
 
@@ -38,6 +40,7 @@ fm_system_time () {
 
 int
 fm_stack_trace (void (*callback) (char*)) {
+#ifdef FM_SYSTEM_LINUX
   void *array[STACK_TRACE_LINE];
   char **stacks;
   int line;
@@ -60,4 +63,5 @@ fm_stack_trace (void (*callback) (char*)) {
   free(stacks);
 
   return line;
+#endif
 }

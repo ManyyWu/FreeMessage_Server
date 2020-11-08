@@ -1,5 +1,5 @@
 #include "run_test.h"
-#include "fm_kernel/thread.h"
+#include "fm_kernel/include/thread.h"
 
 UNIT_TEST(mutex) {
   fm_mutex_t mutex;

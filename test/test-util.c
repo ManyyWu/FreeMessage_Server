@@ -1,6 +1,6 @@
 #include "run_test.h"
-#include "fm_common/time.h"
-#include "fm_kernel/thread.h"
+#include "fm_common/include/timestamp.h"
+#include "fm_kernel/include/thread.h"
 
 UNIT_TEST(version) {
 }

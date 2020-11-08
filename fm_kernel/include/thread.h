@@ -1,7 +1,7 @@
 #ifndef FM_THREAD_H
 #define FM_THREAD_H
 
-#include "fm_common/time.h"
+#include "fm_common/include/timestamp.h"
 
 #include <semaphore.h>
 #include <pthread.h>

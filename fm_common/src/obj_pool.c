@@ -3,6 +3,6 @@
 #include <memory.h>
 
 static int
-_maybe_resize (FM_OBJPOOL *p) {
+_maybe_resize (fm_obj_pool_t *p) {
 
 }

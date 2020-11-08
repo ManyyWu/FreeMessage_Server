@@ -11,6 +11,8 @@
 # define FM_SYSTEM_UNIX
 #elif defined(__APPLE__) && defined(__MACH__)
 # define FM_SYSTEM_DARWIN
+#elif defined(WIN32)
+# define FM_SYSTEM_WIN
 #else
 # error unsupported platform
 #endif
