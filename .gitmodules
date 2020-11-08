@@ -1,3 +1,6 @@
 [submodule "fm_lua"]
 	path = fm_lua
 	url = https://github.com/manyywu/luajit2.git
+[submodule "fm_net/libuv"]
+	path = fm_net/libuv
+	url = https://github.com/libuv/libuv.git
